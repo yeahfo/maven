@@ -21,6 +21,7 @@
         <spring-boot.version>3.2.4</spring-boot.version>
         <spring-cloud.version>2023.0.1</spring-cloud.version>
         <eventuate-platform.version>2023.1.RELEASE</eventuate-platform.version>
+        <ftgo.version>0.0.1</ftgo.version>
     </properties>
 
     <dependencyManagement>
@@ -45,6 +46,12 @@
                 <version>${eventuate-platform.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.yeahfo.ftgo</groupId>
+                <artifactId>ftgo-common</artifactId>
+                <version>${ftgo.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
